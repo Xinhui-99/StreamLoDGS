@@ -91,14 +91,13 @@
     <!-- Abstract -->
     <div class="container">
         <div class="row">
-            <div class="col">
-                <h3>Abstract</h3>
+            <div class="col" style="text-align:center">
+                <h3 style="text-align:center;">Abstract</h3>
                 <hr style="margin-top:0px">
                 <div class="row" style="margin-bottom:5px">
                   <div class="col" style="text-align:center">
-                    <embed src="./intro.pdf"
-                           type="application/pdf"
-                       style="width:100%; height:480px; />        
+                    <img src="./intro.gif"
+                         style="width:100%; height:450px;" />       
                   </div>
                 </div>
 
@@ -111,13 +110,14 @@
 
 
 
+
     <!-- Method Overview (Optional) -->
     <div class="container mt-5">
         <div class="row" style="margin-bottom:5px">
             <div class="col" style="text-align:center">
                 <h3>Method Overview</h3>
                 <hr>
-                <img src="./webpage/method.jpg"
+                <img src="./method.jpg"
                    style="width:100%; height:680px;" />
                 <p class="mt-3 text-justify">
                     Illustration of our proposed StreamLoD-GS. It comprises three major components: (a) LoD-Structured 3DGS with Anchor and Octree; (b) GMM-Based Motion Partitioning; (c) Quantized Residual Refinement. Bottom: The streaming training pipeline. Frames are processed sequentially: the initial frame (Time 0) undergoes LoD-structured 3DGS optimization, while subsequent frames apply motion partitioning and residual refinement to ensure temporally coherent RGB rendering throughout the stream.
@@ -202,20 +202,40 @@
         </div>
     </div>
 
-    <div class="container mt-5 mb-5">
-        <div class="row">
-            <div class="col-12">
-                <h3>Citation</h3>
+    <div class="container mt-5">
+        <div class="row" style="margin-bottom:5px">
+            <div class="col" style="text-align:center">
+                <h3>3D Gaussian Splatting</h3>
                 <hr style="margin-top:0px">
-                <pre><code>@article{wang2021cross,
-  title={Cross-Domain and Disentangled Face Manipulation with 3D Guidance},
-  author={Wang, Can and Chai, Menglei and He, Mingming and Chen, Dongdong and Liao, Jing},
-  journal={arXiv preprint arXiv:2104.11228},
-  year={2021}
-    }</code></pre>
+                <div class="row" style="margin-bottom:20px">
+                    <div class="col-md-4" style="text-align:center; padding: 10px;">
+                        <video controls preload="metadata" style="width:100%; height:auto; border-radius: 8px;">
+                            <source src="./dissussion1.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                        <p class="mt-2"><strong> Frame 1. </strong></p>
+                    </div>
+                    <div class="col-md-4" style="text-align:center; padding: 10px;">
+                        <video controls preload="metadata" style="width:100%; height:auto; border-radius: 8px;">
+                            <source src="./discussion6.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                        <p class="mt-2"><strong>Frame 6.</strong></p>
+                    </div>
+                    <div class="col-md-4" style="text-align:center; padding: 10px;">
+                        <video controls preload="metadata" style="width:100%; height:auto; border-radius: 8px;">
+                            <source src="./discussion12.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                        <p class="mt-2"><strong>Frame 12.</strong></p>
+                    </div>
                 </div>
+                <p class="text-left">
+                    3D Gaussian Splatting of Meet Room Scene (Scene: Discussion).
+                </p>
             </div>
         </div>
+    </div>
 
 
     <div class="container mt-5 mb-5">
